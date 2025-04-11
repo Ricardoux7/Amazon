@@ -1,0 +1,441 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.headerMobile {
+  background-color: #232f3e;
+  width: 100%;
+}
+.headerMobile__primero {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerMobile__primero .parteIzq {
+  align-items: center;
+  justify-content: start;
+  display: flex;
+}
+.headerMobile__primero .parteDer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerMobile__segundo {
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.headerMobile__segundo .botonBuscar {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  height: 42px;
+  background-color: #febd69;
+  border-radius: 8px;
+  border: none;
+}
+.headerMobile__segundo .lupa {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+.headerMobile__tercero {
+  height: 45px;
+  color: white;
+  align-items: center;
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-between;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.headerMobile .buscador {
+  height: 40px;
+  width: 80%;
+  border-radius: 8px;
+  border: none;
+  padding: 0 95px 0 10px;
+  justify-content: center;
+}
+
+.headerDesktop__primero .parteIzqDesktop {
+  height: 60px;
+  background-color: #131921;
+  padding-left: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerDesktop__primero .parteIzqDesktop p {
+  color: White;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+.headerDesktop__primero .parteIzqDesktop .Centro {
+  border-radius: 8px;
+}
+.headerDesktop__primero .parteIzqDesktop .Centro .botonBuscar {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  height: 42px;
+  background-color: #febd69;
+  border-radius: 8px;
+  border: none;
+}
+.headerDesktop__primero .parteIzqDesktop .Centro .buscador {
+  height: 40px;
+  width: 50%;
+  border-radius: 8px;
+  border: none;
+  padding: 0 95px 0 10px;
+  justify-content: center;
+}
+.headerDesktop__segundo {
+  height: 39px;
+  background-color: #232f3e;
+}
+
+.Icons {
+  width: 40px;
+  height: 40px;
+}
+
+.IconsLogo {
+  width: 100px;
+  height: 45px;
+  padding-top: 14px;
+}
+
+.location {
+  height: 44px;
+  background-color: #37475a;
+  color: white;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: start;
+  display: flex;
+}
+
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2px;
+  background-color: white;
+  transform: translateY(-50px);
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 0 5px;
+}
+.catalogo div {
+  width: 120px;
+  height: 170px;
+  background-color: white;
+}
+
+/*    for $n from 1 through 3 */
+.iniciarSesion {
+  background-color: white;
+  width: 100%;
+  height: 150px;
+}
+
+.iniciarSesion p {
+  font-family: sans-serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+}
+
+.iniciarSesion button {
+  background-color: #ffd814;
+  border-radius: 30px;
+  border: none;
+  width: 90%;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  color: black;
+  font-weight: bold;
+}
+
+.iniciarSesion h5 {
+  padding-top: 10px;
+  margin-left: 5px;
+}
+
+.iniciarSesion h5 a {
+  padding-top: 10px;
+  font-family: sans-serif;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.divisor {
+  width: 100%;
+  height: 2px;
+  background-color: #e3e6e6;
+}
+
+.PrimeraSeccion h4 {
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 10px 0 10px 5px;
+}
+.PrimeraSeccion__catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.PrimeraSeccion__catalogo div {
+  width: 170px;
+  height: 170px;
+  background-color: white;
+}
+.PrimeraSeccion h5 {
+  font-family: sans-serif;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  justify-content: start;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.SegundaSeccion h4 {
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 10px 0 10px 5px;
+}
+.SegundaSeccion__catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.SegundaSeccion__catalogo div {
+  width: 170px;
+  height: 170px;
+  background-color: white;
+}
+.SegundaSeccion h5 {
+  font-family: sans-serif;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  justify-content: start;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.TerceraSeccion h4 {
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 10px 0 10px 5px;
+}
+.TerceraSeccion__catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.TerceraSeccion__catalogo div {
+  width: 170px;
+  height: 170px;
+  background-color: white;
+}
+.TerceraSeccion h5 {
+  font-family: sans-serif;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  justify-content: start;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.CuartaSeccion h4 {
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 10px 0 10px 5px;
+}
+.CuartaSeccion__catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.CuartaSeccion__catalogo div {
+  width: 170px;
+  height: 170px;
+  background-color: white;
+}
+.CuartaSeccion h5 {
+  font-family: sans-serif;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  justify-content: start;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.QuintaSeccion h4 {
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 10px 0 10px 5px;
+}
+.QuintaSeccion__catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.QuintaSeccion__catalogo div {
+  width: 170px;
+  height: 170px;
+  background-color: white;
+}
+.QuintaSeccion h5 {
+  font-family: sans-serif;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  justify-content: start;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.SextaSeccion h4 {
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 10px 0 10px 5px;
+}
+.SextaSeccion__catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.SextaSeccion__catalogo div {
+  width: 170px;
+  height: 170px;
+  background-color: white;
+}
+.SextaSeccion h5 {
+  font-family: sans-serif;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  justify-content: start;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.PieDePaginaDesktop {
+  height: auto;
+  width: 100%;
+  background-color: #232f3e;
+  position: relative;
+}
+.PieDePaginaDesktop img {
+  display: block;
+  margin: 0 auto;
+}
+.PieDePaginaDesktop__categorias {
+  justify-content: space-between;
+  display: flex;
+}
+.PieDePaginaDesktop__categorias--Conocenos {
+  height: auto;
+  color: white;
+  font-family: sans-serif;
+  padding-top: 10px;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.PieDePaginaDesktop__categorias--Conocenos li {
+  list-style: none;
+  line-height: 2;
+  color: #c0c2c4;
+}
+.PieDePaginaDesktop__categorias--Conocenos h4 {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.PieDePaginaDesktop__categorias--Dinero {
+  height: auto;
+  color: white;
+  font-family: sans-serif;
+  padding-top: 10px;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.PieDePaginaDesktop__categorias--Dinero li {
+  list-style: none;
+  line-height: 2;
+  color: #c0c2c4;
+}
+.PieDePaginaDesktop__categorias--Dinero h4 {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.PieDePaginaDesktop__categorias--Pagos {
+  height: auto;
+  color: white;
+  font-family: sans-serif;
+  padding-top: 10px;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.PieDePaginaDesktop__categorias--Pagos li {
+  list-style: none;
+  line-height: 2;
+  color: #c0c2c4;
+}
+.PieDePaginaDesktop__categorias--Pagos h4 {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.PieDePaginaDesktop__categorias--Ayuda {
+  height: auto;
+  color: white;
+  font-family: sans-serif;
+  padding-top: 10px;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.PieDePaginaDesktop__categorias--Ayuda li {
+  list-style: none;
+  line-height: 2;
+  color: #c0c2c4;
+}
+.PieDePaginaDesktop__categorias--Ayuda h4 {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 850px) {
+  .headerMobile {
+    display: none;
+  }
+  .location {
+    display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .headerDesktop {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=amazon.css.map */
