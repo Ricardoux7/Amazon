@@ -4,12 +4,6 @@
   padding: 0;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .headerMobile {
   background-color: #232f3e;
   width: 100%;
@@ -119,10 +113,6 @@ html, body {
   margin: 0 15px;
   width: 70%;
 }
-.headerDesktop__primero .parteDerDesk__idioma {
-  align-items: center;
-  display: flex;
-}
 .headerDesktop__primero .parteDerDesk h4 {
   font-family: sans-serif;
   font-size: 9px;
@@ -149,30 +139,16 @@ html, body {
   align-items: center;
   justify-content: space-between;
 }
-.headerDesktop__segundo ul li:first-child {
-  align-items: center;
-  display: flex;
-  cursor: pointer;
-}
-.headerDesktop__segundo ul img {
-  cursor: pointer;
-}
 
 .Icons {
-  width: 30px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.IconsDesk {
   width: 40px;
   height: 40px;
 }
 
 .IconsLogo {
   width: 100px;
-  padding-top: 10px;
-  cursor: pointer;
+  height: 45px;
+  padding-top: 14px;
 }
 
 .IconPin {
@@ -205,10 +181,14 @@ html, body {
   background-color: #e3e6e6;
 }
 
+main {
+  position: relative;
+}
+
 .catalogoMovil {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 2px;
   background-color: white;
   transform: translateY(-50px);
@@ -216,10 +196,12 @@ html, body {
   margin: 0 5px;
 }
 .catalogoMovil div {
-  width: 150px;
+  width: 120px;
+  height: 170px;
   background-color: white;
 }
 
+/*    for $n from 1 through 3 */
 .catalogoDesktop {
   display: flex;
   flex-wrap: wrap;
@@ -231,6 +213,10 @@ html, body {
   margin: 0 5px;
 }
 
+/*  div
+ *      width: 300px
+ *      height: 250px
+ *      background-color: white*/
 .iniciarSesion {
   background-color: white;
   width: 100%;
@@ -278,63 +264,11 @@ html, body {
 .SeccionDesktop {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 10px;
-  padding: 30px;
+  padding: 50px;
   height: auto;
   background-color: #e3e6e6;
-}
-
-.primerTexto {
-  color: black;
-  font-family: sans-serif;
-  font-size: 20px;
-  justify-content: start;
-  display: flex;
-  padding-top: 5px;
-  padding-left: 30px;
-}
-
-.listAside {
-  list-style: none;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 17px;
-  padding: 7px 0 0 10px;
-  justify-content: start;
-  display: flex;
-  padding-left: 30px;
-}
-
-#aside {
-  height: 100%;
-  width: 400px;
-  background-color: white;
-  position: fixed;
-  top: 0;
-  flex-direction: column;
-  z-index: 200;
-  transform: translateX(-400px);
-}
-#aside .Identificacion {
-  height: 50px;
-  width: 100%;
-  background-color: #232f3e;
-  align-items: center;
-  justify-content: start;
-  display: flex;
-  padding-left: 30px;
-}
-#aside p {
-  color: white;
-  font-size: 20px;
-  font-family: sans-serif;
-  font-weight: bold;
-  padding-left: 20px;
-}
-
-.objetosDesktop {
-  position: relative;
 }
 
 .DesktopSeccion-1 {
@@ -346,7 +280,6 @@ html, body {
   align-items: start;
   background-color: white;
   justify-content: space-between;
-  gap: 5px;
   transform: translateY(-100px);
 }
 .DesktopSeccion-1 .Prueba {
@@ -354,20 +287,15 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 350px;
+  height: auto;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
-  margin: 0 10px;
 }
 .DesktopSeccion-1 .Prueba img {
-  width: 40%;
-  object-fit: cover;
-}
-.DesktopSeccion-1 .Prueba .single-img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
+  width: 35%;
+  object-fit: contain;
 }
 .DesktopSeccion-1 h4 {
   font-family: sans-serif;
@@ -393,7 +321,6 @@ html, body {
   align-items: start;
   background-color: white;
   justify-content: space-between;
-  gap: 5px;
   transform: translateY(-100px);
 }
 .DesktopSeccion-2 .Prueba {
@@ -401,20 +328,15 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 350px;
+  height: auto;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
-  margin: 0 10px;
 }
 .DesktopSeccion-2 .Prueba img {
-  width: 40%;
-  object-fit: cover;
-}
-.DesktopSeccion-2 .Prueba .single-img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
+  width: 35%;
+  object-fit: contain;
 }
 .DesktopSeccion-2 h4 {
   font-family: sans-serif;
@@ -440,7 +362,6 @@ html, body {
   align-items: start;
   background-color: white;
   justify-content: space-between;
-  gap: 5px;
   transform: translateY(-100px);
 }
 .DesktopSeccion-3 .Prueba {
@@ -448,20 +369,15 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 350px;
+  height: auto;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
-  margin: 0 10px;
 }
 .DesktopSeccion-3 .Prueba img {
-  width: 40%;
-  object-fit: cover;
-}
-.DesktopSeccion-3 .Prueba .single-img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
+  width: 35%;
+  object-fit: contain;
 }
 .DesktopSeccion-3 h4 {
   font-family: sans-serif;
@@ -487,7 +403,6 @@ html, body {
   align-items: start;
   background-color: white;
   justify-content: space-between;
-  gap: 5px;
   transform: translateY(-100px);
 }
 .DesktopSeccion-4 .Prueba {
@@ -495,20 +410,15 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 350px;
+  height: auto;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
-  margin: 0 10px;
 }
 .DesktopSeccion-4 .Prueba img {
-  width: 40%;
-  object-fit: cover;
-}
-.DesktopSeccion-4 .Prueba .single-img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
+  width: 35%;
+  object-fit: contain;
 }
 .DesktopSeccion-4 h4 {
   font-family: sans-serif;
@@ -534,7 +444,6 @@ html, body {
   align-items: start;
   background-color: white;
   justify-content: space-between;
-  gap: 5px;
   transform: translateY(-100px);
 }
 .DesktopSeccion-5 .Prueba {
@@ -542,20 +451,15 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 350px;
+  height: auto;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
-  margin: 0 10px;
 }
 .DesktopSeccion-5 .Prueba img {
-  width: 40%;
-  object-fit: cover;
-}
-.DesktopSeccion-5 .Prueba .single-img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
+  width: 35%;
+  object-fit: contain;
 }
 .DesktopSeccion-5 h4 {
   font-family: sans-serif;
@@ -581,7 +485,6 @@ html, body {
   align-items: start;
   background-color: white;
   justify-content: space-between;
-  gap: 5px;
   transform: translateY(-100px);
 }
 .DesktopSeccion-6 .Prueba {
@@ -589,20 +492,15 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 350px;
+  height: auto;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
-  margin: 0 10px;
 }
 .DesktopSeccion-6 .Prueba img {
-  width: 40%;
-  object-fit: cover;
-}
-.DesktopSeccion-6 .Prueba .single-img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
+  width: 35%;
+  object-fit: contain;
 }
 .DesktopSeccion-6 h4 {
   font-family: sans-serif;
@@ -628,7 +526,6 @@ html, body {
   align-items: start;
   background-color: white;
   justify-content: space-between;
-  gap: 5px;
   transform: translateY(-100px);
 }
 .DesktopSeccion-7 .Prueba {
@@ -636,20 +533,15 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 350px;
+  height: auto;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
-  margin: 0 10px;
 }
 .DesktopSeccion-7 .Prueba img {
-  width: 40%;
-  object-fit: cover;
-}
-.DesktopSeccion-7 .Prueba .single-img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
+  width: 35%;
+  object-fit: contain;
 }
 .DesktopSeccion-7 h4 {
   font-family: sans-serif;
@@ -675,7 +567,6 @@ html, body {
   align-items: start;
   background-color: white;
   justify-content: space-between;
-  gap: 5px;
   transform: translateY(-100px);
 }
 .DesktopSeccion-8 .Prueba {
@@ -683,20 +574,15 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 350px;
+  height: auto;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
-  margin: 0 10px;
 }
 .DesktopSeccion-8 .Prueba img {
-  width: 40%;
-  object-fit: cover;
-}
-.DesktopSeccion-8 .Prueba .single-img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
+  width: 35%;
+  object-fit: contain;
 }
 .DesktopSeccion-8 h4 {
   font-family: sans-serif;
@@ -713,66 +599,6 @@ html, body {
   padding-left: 5px;
 }
 
-.DesktopSeccion-9 {
-  width: 100%;
-  align-items: start;
-  background-color: white;
-  justify-content: space-between;
-  list-style: none;
-  position: static;
-  flex-direction: row;
-  padding: 5 10px;
-  margin-top: 30px;
-  transform: translateY(-100px);
-}
-.DesktopSeccion-9 li {
-  flex-direction: row;
-  position: relative;
-  display: inline-flex;
-  margin-right: 15px;
-  padding: 0 10px;
-}
-.DesktopSeccion-9 .Prueba {
-  justify-content: space-between;
-  white-space: nowrap;
-  overflow-x: auto;
-}
-.DesktopSeccion-9 h4 {
-  font-family: sans-serif;
-  font-size: 15px;
-  margin: 10px 0 10px 5px;
-}
-
-.DesktopSeccion-10 {
-  width: 100%;
-  align-items: start;
-  background-color: white;
-  justify-content: space-between;
-  list-style: none;
-  position: static;
-  flex-direction: row;
-  padding: 5 10px;
-  margin-top: 30px;
-  transform: translateY(-100px);
-}
-.DesktopSeccion-10 li {
-  flex-direction: row;
-  position: relative;
-  display: inline-flex;
-  margin-right: 15px;
-  padding: 0 10px;
-}
-.DesktopSeccion-10 .Prueba {
-  justify-content: space-between;
-  white-space: nowrap;
-  overflow-x: auto;
-}
-.DesktopSeccion-10 h4 {
-  font-family: sans-serif;
-  font-size: 15px;
-  margin: 10px 0 10px 5px;
-}
-
 .DesktopSeccion-11 {
   height: auto;
   width: auto;
@@ -782,7 +608,6 @@ html, body {
   align-items: start;
   background-color: white;
   justify-content: space-between;
-  gap: 5px;
   transform: translateY(-100px);
 }
 .DesktopSeccion-11 .Prueba {
@@ -790,20 +615,15 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 350px;
+  height: auto;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
-  margin: 0 10px;
 }
 .DesktopSeccion-11 .Prueba img {
-  width: 40%;
-  object-fit: cover;
-}
-.DesktopSeccion-11 .Prueba .single-img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
+  width: 35%;
+  object-fit: contain;
 }
 .DesktopSeccion-11 h4 {
   font-family: sans-serif;
@@ -829,7 +649,6 @@ html, body {
   align-items: start;
   background-color: white;
   justify-content: space-between;
-  gap: 5px;
   transform: translateY(-100px);
 }
 .DesktopSeccion-12 .Prueba {
@@ -837,20 +656,15 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 350px;
+  height: auto;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
-  margin: 0 10px;
 }
 .DesktopSeccion-12 .Prueba img {
-  width: 40%;
-  object-fit: cover;
-}
-.DesktopSeccion-12 .Prueba .single-img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
+  width: 35%;
+  object-fit: contain;
 }
 .DesktopSeccion-12 h4 {
   font-family: sans-serif;
@@ -1144,35 +958,8 @@ html, body {
     padding: 0px 60px;
   }
 }
-@media only screen and (min-width: 710px) {
-  .catalogoMovil div {
-    width: 200px;
-  }
-}
-main {
-  position: relative;
-}
-
 footer {
   position: relative;
 }
 
-header {
-  position: relative;
-}
-
-aside {
-  display: none;
-}
-
-#check:checked ~ #menu {
-  transform: translateX(-400px);
-  transition: all 0.5s ease-in-out;
-}
-
-#check:checked ~ #aside {
-  transform: translateX(800px);
-  transition: all 0.5s ease-in-out;
-}
-
-/*# sourceMappingURL=amazon.css.map */
+/*# sourceMappingURL=amazom.css.map */

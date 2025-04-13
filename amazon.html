@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="amazon.css">
 </head>
 <body>
+    
     <header class="headerMobile">
         <div class="headerMobile__primero">
             <div class="parteIzq">
@@ -36,51 +37,243 @@
     
     <header class="headerDesktop">
         <div class="headerDesktop__primero">
-            <div class="parteIzqDesktop">
-                <div class="parteIzquierda">
-                    <img src="Icons/logo2.png" alt="">
-                    <img src="Icons/pin2.png" alt="">
-                    <p>Enviar a Venezuela</p>
-                </div>
-            </div>
-            <div class="Centro">
-                <input type="text" class="buscador" placeholder="Buscar en Amazon">
-                <button class="botonBuscar">                
-                <img src="Icons/lupa.png" alt="" class="Icons">
+            <div class="parteIzqDesk">
+                <img src="Icons/logo2.png" alt="" class="IconsLogo">
+                <img src="Icons/pin2.png" alt="" class="IconPin">
+                <p>Enviar a <span style="font-weight: bold;">Venezuela</span></p>
+           </div>
+           <div class="Centro">
+                <input type="text" class="buscadorDesk" placeholder="Buscar en Amazon">
+                <button class="botonBuscarDesk">                
+                    <img src="Icons/lupa.png" alt="" class="IconsDesk">
                 </button>
             </div>
+            <div class="parteDerDesk">
+                <section class="parteDerDesk__idioma">
+                    <img src="Icons/usa.png" alt="">
+                    <p>ES</p>
+                </section>
+                <section>
+                    <h4>Hola, identificate</h4>
+                    <p>Cuenta y listas</p>
+                </section>
+                <section>
+                    <h4>Devoluciones</h4>
+                    <p>y pedidos</p>
+                </section>
+                <section>
+                    <img src="Icons/Captura de pantalla 2025-04-11 145504.png" alt="">
+                </section>
+                <section>
+                    <p>Carrito</p>
+                </section>
+            </div>
         </div>
-        <div class="headerDesktop__segundo"></div>
+
+        <div class="headerDesktop__segundo">
+                <ul>
+                    <li><input type="checkbox" id="check" >
+                        <label for="check" id="menu">
+                        <img src="Icons/menu2.png" alt="">
+                        </label>
+                        <P>Todo</P>
+                    </li>
+                    <li>Ofertas del Día</li>
+                    <li>Prime Video</li>
+                    <li>Listas</li>
+                    <li>Servicio al Cliente</li>
+                    <li>Tarjetas de Regalo</li>
+                    <li>Vender</li>
+                </ul>
+        </div>
     </header>
 
-    <div class="location">
-        <img src="Icons/pin.png" alt="">
-        <p>Enviar a Venezuela</p>
-    </div>
-    <div class="primeraImagen">
-        <img src="Images/611TzVC54ML._SR1236,1080_.jpg" alt="Llena tu cesta de alegría" width="100%" height="400px" class="primeraImagen">
-    </div>
+    <aside id="aside">
+        <div class="Identificacion">
+            <img src="Icons/user2.png" alt="">
+            <p>Hola, Identificate</p>
+        </div>
+        <div>
+            <h2 class="primerTexto">Contenido y dispositivos digitales</h2>
+            <li class="listAside">Prime Video</li>
+            <li class="listAside">Amazon Music</li>
+            <li class="listAside">E-readers Kindle y Libros</li>
+            <li class="listAside">Appstore de Amazon</li>
+        </div>
+        <div>
+            <h2 class="primerTexto">Buscar por departamento</h2>
+            <li class="listAside">Electronicos</li>
+            <li class="listAside">Computadoras</li>
+            <li class="listAside">Smart Home</li>
+            <li class="listAside">Arte y artesanias</li>
+            <li class="listAside">Ver todo</li>
+        </div>
+        <div>
+            <h2 class="primerTexto">Programas y funcionalidades</h2>
+            <li class="listAside">Tarjetas de Regalo</li>
+            <li class="listAside">Comprar por interes</li>
+            <li class="listAside">amazon Live</li>
+            <li class="listAside">Tienda Internacional</li>
+            <li class="listAside">Ver todo</li>
+        </div>
+        <div>
+            <h2 class="primerTexto">Ayuda y configuracion</h2>
+            <li class="listAside">Tu Cuenta</li>
+            <li class="listAside">Espanol</li>
+            <li class="listAside"><img src="Icons/usa2.png" alt="">Estados Unidos</li>
+            <li class="listAside">Servicio al cliente</li>
+            <li class="listAside">Identificate</li>
+        </div>
+    </aside>
 
     <main>
-        <div class="catalogo">
-            <div class="objeto-1">
+        <div class="location">
+            <img src="Icons/pin.png" alt="">
+            <p>Enviar a Venezuela</p>
+        </div>
+        <div class="primeraImagenMovil">
+            <img src="Images/611TzVC54ML._SR1236,1080_.jpg" alt="Llena tu cesta de alegría" width="100%" height="400px" class="primeraImagen">
+        </div>
+
+        <div class="primeraImagenDekstop">
+            <img src="Images/fondo.jpg" alt="Llena tu cesta de alegría" width="100%" height="100%" class="primeraImagen">
+        </div>
+
+        <div class="catalogoMovil">
+            <div class="">
                 <img src="Images/velocidad.jpg" alt="" width="100%" height="100%">
             </div>
-            <div class="objeto-2">
+            <div class="">
                 <img src="Images/juegos.jpg" alt="" width="100%" height="100%">
             </div>
-            <div class="objeto-3">
+            <div class="">
                 <img src="Images/electronicos.jpg" alt="" width="100%" height="100%">
             </div>
         </div>
+        <section class=objetosDesktop>
+                <section class="SeccionDesktop">
+                    <div class="DesktopSeccion-1">
+                        <h4>Electronicos</h4>
+                        <div class="Prueba">
+                            <img src="Images/computadora.jpg" alt="">
+                            <img src="Images/portatiles.jpg" alt="">
+                            <img src="Images/discos duros.jpg" alt="">
+                            <img src="Images/accesorios.jpg" alt="" >                          
+                        </div>
+                        <h5>Ver mas</h5>
+                    </div>
+                    <div class="DesktopSeccion-2">
+                        <h4>Gaming</h4>
+                        <div class="Prueba">
+                            <img src="Images/auriculares.jpg" alt="">
+                            <img src="Images/tabletas.jpg" alt="">
+                            <img src="Images/catalogoJuegos.jpg" alt="">
+                            <img src="Images/cornetas.jpg" alt="">
+                        </div>
+                        <h5>Ver mas</h5>
+                    </div>
+                    <div class="DesktopSeccion-3">
+                        <h4>xxxxxx</h4>
+                        <div class="Prueba">
+                            <img src="Images/ropa.jpg" alt="">
+                            <img src="Images/rastreadores.jpg" alt="">
+                            <img src="Images/equipo.jpg" alt="">
+                            <img src="Images/ofertas.jpg" alt="">
+                        </div>
+                        <h5>Ver mas</h5>
+                    </div>
+                    <div class="DesktopSeccion-4">
+                        <h4>XXXXXXXXXXXX</h4>
+                        <div class="Prueba">
+                            <img src="Images/televisoresGrandes.jpg" alt="">
+                            <img src="Images/televisoresPequenos.jpg" alt="">
+                            <img src="Images/masDe4Estrellas.jpg" alt="">
+                            <img src="Images/ofertasDeTv.jpg" alt="">
+                        </div>
+                        <h5>Ver mas</h5>
+                    </div>
+
+                    <div class="DesktopSeccion-5">
+                        <h4>Mejora tu PC</h4>
+                    <div class="Prueba">
+                        <img src="Images/portatiles2.jpg" alt="">
+                        <img src="Images/Pcs.jpg" alt="">
+                        <img src="Images/DiscosDuros.jpg" alt="">
+                        <img src="Images/monitores.jpg" alt="">
+                    </div>
+                    <h5>Ver mas</h5>
+                </div>
+
+                    <div class="DesktopSeccion-6">
+                        <h4>Armonia en el hogar</h4>
+                    <div class="Prueba">
+                        <img src="Images/ComodidadEnElHogar.jpg" alt="">
+                        <img src="Images/DaleLaIluminacionAdecuada.jpg" alt="">
+                        <img src="Images/DecoraConElegancia.jpg" alt="">
+                        <img src="Images/EsencialesDeCocina.jpg" alt="">
+                    </div>
+                    <h5>Ver mas</h5>
+                </div>
+
+                    <div class="DesktopSeccion-7">
+                        <h4>Dia de las madres</h4>    
+                        <div class="Prueba">
+                            <img src="Images/diaDeLasMadres.jpg" alt="" class="single-img">
+                        </div>
+                        <h5>Ver mas</h5>
+                    </div>
+
+                    <div class="DesktopSeccion-8">
+                        <h4>Juguetes</h4>
+                        <div class="Prueba">
+                            <img src="Images/juguetes.png" alt="" class="single-img">
+                        </div>
+                        <h5>Ver mas</h5>
+                    </div>
+
+                    <div class="DesktopSeccion-9">
+                        <h4>Los más deseados en Videojuegos</h4>
+                        <div class="Prueba">
+                                <li><img src="Images/juego1.jpg" alt="Juego 1"></li>
+                                <li><img src="Images/play.jpg" alt="Play"></li>
+                                <li><img src="Images/juego2.jpg" alt="Juego 3"></li>
+                                <li><img src="Images/juego3.jpg" alt="Juego 4"></li>
+                                <li><img src="Images/juego4.jpg" alt="Juego 5"></li>
+                                <li><img src="Images/juego5.jpg" alt="Juego 6"></li>
+                                <li><img src="Images/juego6.jpg" alt="Juego 7"></li>
+                                <li><img src="Images/juego7.jpg" alt="Juego 8"></li>
+                                <li><img src="Images/juego8.jpg" alt="Juego 9"></li>
+                                <li><img src="Images/juego9.jpg" alt="Juego 10"></li>
+                                <li><img src="Images/juego10.jpg" alt="Juego 11"></li>
+                        </div>
+                    </div>
+
+                    <div class="DesktopSeccion-9">
+                        <h4>Los mejores vendedores en Juguetes para ti</h4>
+                        <div class="Prueba">
+                                <li><img src="Images/juguete1.jpg" alt="Juguete 1"></li>
+                                <li><img src="Images/juguete2.jpg" alt="Juguete 2"></li>
+                                <li><img src="Images/juguete3.jpg" alt="Juguete 3"></li>
+                                <li><img src="Images/juguete4.jpg" alt="Juguete 4"></li>
+                                <li><img src="Images/juguete5.jpg" alt="Juguete 5"></li>
+                                <li><img src="Images/juguete6.jpg" alt="Juguete 6"></li>
+                                <li><img src="Images/juguete7.jpg" alt="Juguete 7"></li>
+                                <li><img src="Images/juguete8.jpg" alt="Juguete 8"></li>
+                                <li><img src="Images/juguete9.jpg" alt="Juguete 9"></li>
+                        </div>
+                    </div>
+                </section>
+        </section>
 
         <section class="iniciarSesion">
             <p>Inicia sesion para vivir tu mejor experiencia</p>
             <button class="botonIniciarSesion">Iniciar Sesion de forma segura</button>
             <h5><a href="">Crear una cuenta</a></h5>
         </section>
+
         <div class="divisor"></div>
 
+        <section class="objetosMovil">
         <div class="PrimeraSeccion">
             <h4 class="TituloCatalogo">
                 Consigue los equipos y accesorios mas destacados
@@ -234,6 +427,7 @@
                 </div>
             </section>
             <h5>Ver mas</h5>
+        </section>
     </main>
 
     <footer class="PieDePaginaDesktop">

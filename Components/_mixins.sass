@@ -1,3 +1,5 @@
+@use "./_variables"
+    
 @mixin Seccion()
     display: flex
     flex-wrap: wrap
@@ -37,3 +39,14 @@
     h4
         font-weight: bold
         padding-bottom: 10px
+
+@mixin seccionesDivDesk()
+    width: 300px
+    height: 350px
+    background-color: white
+
+@mixin seccionDesk()
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+    justify-content: space-evenly
