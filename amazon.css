@@ -22,7 +22,7 @@ html, body {
 }
 .headerMobile__primero .parteIzq {
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   display: flex;
 }
 .headerMobile__primero .parteDer {
@@ -42,7 +42,9 @@ html, body {
   height: 42px;
   background-color: #febd69;
   border: none;
-  border-top-right-radius: 8px;
+  border-radius: 8px;
+  position: absolute;
+  left: 85%;
 }
 .headerMobile__segundo .lupa {
   position: absolute;
@@ -67,6 +69,7 @@ html, body {
   border: none;
   padding: 0 95px 0 10px;
   justify-content: center;
+  border-radius: 8px;
 }
 
 .headerDesktop {
@@ -98,10 +101,31 @@ html, body {
   justify-content: center;
   display: flex;
 }
+.headerDesktop__primero .Centro select {
+  height: 40px;
+  width: 80px;
+  background-color: #e6e6e6;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0 10px;
+  cursor: pointer;
+  border-color: Orange;
+  border: 1px solid orange;
+}
+.headerDesktop__primero .Centro select option {
+  font-family: sans-serif;
+  color: black;
+  font-weight: bold;
+}
 .headerDesktop__primero .Centro .buscadorDesk {
   height: 40px;
-  width: 90%;
+  width: 100%;
   border: none;
+  border-color: Orange;
+  border: 1px solid orange;
   border-radius: 0;
 }
 .headerDesktop__primero .Centro .botonBuscarDesk {
@@ -112,9 +136,10 @@ html, body {
   border-bottom-right-radius: 8px;
 }
 .headerDesktop__primero .parteDerDesk {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-evenly;
   margin-right: 10px;
   margin: 0 15px;
   width: 70%;
@@ -136,11 +161,30 @@ html, body {
   margin-left: 10px;
   font-weight: bold;
 }
+.headerDesktop__primero .parteDerDesk select {
+  height: 40px;
+  width: 60px;
+  background-color: #e6e6e6;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  align-items: center;
+  display: flex;
+  padding: 0 10px;
+  cursor: pointer;
+  background-color: #131921;
+  border: none;
+  color: white;
+}
+.headerDesktop__primero .parteDerDesk select option {
+  font-family: sans-serif;
+  font-weight: bold;
+}
 .headerDesktop__segundo {
   height: 40px;
   background-color: #232f3e;
 }
 .headerDesktop__segundo ul {
+  width: 75%;
   padding-top: 10px;
   display: flex;
   color: white;
@@ -156,6 +200,12 @@ html, body {
 }
 .headerDesktop__segundo ul img {
   cursor: pointer;
+}
+.headerDesktop #categorias {
+  background-color: white;
+  height: 500px;
+  width: 300px;
+  position: relative;
 }
 
 .Icons {

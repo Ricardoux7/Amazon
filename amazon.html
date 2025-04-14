@@ -34,8 +34,11 @@
             <p>Mas vendidos</p>
         </div>
     </header>
-    
+
     <header class="headerDesktop">
+        <div class="categorias">
+            
+        </div>
         <div class="headerDesktop__primero">
             <div class="parteIzqDesk">
                 <img src="Icons/logo2.png" alt="" class="IconsLogo">
@@ -43,6 +46,38 @@
                 <p>Enviar a <span style="font-weight: bold;">Venezuela</span></p>
            </div>
            <div class="Centro">
+            <label for="botonTodos">
+                <select name="opciones" id="">Todos
+                    <option value="">Todos</option>
+                    <option value="">Arte y artesania</option>
+                    <option value="">Automotriz</option>
+                    <option value="">Bebe</option>
+                    <option value="">Belleza y cuidado</option>
+                    <option value="">Cine y TV</option>
+                    <option value="">Computadoras</option>
+                    <option value="">Deportes y actividades al aire libre</option>
+                    <option value="">Electronicos</option>
+                    <option value="">Equipaje</option>
+                    <option value="">Herramientas y mejoramiento de hogar</option>
+                    <option value="">Hogar y Cocina</option>
+                    <option value="">Industrial  y Cientifico</option>
+                    <option value="">Insumos para mascotas</option>
+                    <option value="">Juguetes y juegos</option>
+                    <option value="">Libros</option>
+                    <option value="">Moda para ninas</option>
+                    <option value="">Moda para ninos</option>
+                    <option value="">Moda para hombre</option>
+                    <option value="">Moda para mujer</option>
+                    <option value="">Musica y MP3</option>
+                    <option value="">Musica, CD y vinilos</option>
+                    <option value="">Ofertas</option>
+                    <option value="">Prime Video</option>
+                    <option value="">Salud y productos para el hogar</option>
+                    <option value="">Software</option>
+                    <option value="">Tienda Kindle</option>
+                    <option value="">Videojuegos</option>
+                </select>
+            </label>
                 <input type="text" class="buscadorDesk" placeholder="Buscar en Amazon">
                 <button class="botonBuscarDesk">                
                     <img src="Icons/lupa.png" alt="" class="IconsDesk">
@@ -51,7 +86,16 @@
             <div class="parteDerDesk">
                 <section class="parteDerDesk__idioma">
                     <img src="Icons/usa.png" alt="">
-                    <p>ES</p>
+                    <Select name="Idioma" class="idioma">
+                        <option value="">EN</option>
+                        <option value="">ES</option>
+                        <option value="">DU</option>
+                        <option value="">JP</option>
+                        <option value="">FR</option>
+                        <option value="">IT</option>
+                        <option value="">GE</option>
+                        <option value="">CH</option>
+                    </Select>
                 </section>
                 <section>
                     <h4>Hola, identificate</h4>
@@ -489,6 +533,16 @@
         </div>
         <div class="divisor"></div>
         <img src="Icons/logo.png" alt="">
+        <Select name="Idioma" class="idioma">
+            <option value="">EN</option>
+            <option value="">ES</option>
+            <option value="">DU</option>
+            <option value="">JP</option>
+            <option value="">FR</option>
+            <option value="">IT</option>
+            <option value="">GE</option>
+            <option value="">CH</option>
+        </Select>
     </footer>
 
     <footer class="PieDePagina__Movil">
