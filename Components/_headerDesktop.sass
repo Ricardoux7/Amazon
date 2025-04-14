@@ -1,0 +1,126 @@
+@use "./_variables"
+@use "./_mixins"
+
+header
+    position: relative
+
+.headerDesktop
+    position: relative
+
+    &__primero
+        background-color: variables.$colornavPrincipalDesktop
+        width: 100%
+        height: 60px
+        display: flex
+        justify-content: space-between
+        position: relative
+        
+        .parteIzqDesk
+            width: 50%
+            display: flex
+            align-items: center
+            justify-content: start
+            margin-left: 10px
+            p
+                font-family: sans-serif
+                font-size: 15px
+                color: white
+                margin-left: 10px
+        .Centro
+            align-items: center
+            width: 100%
+            justify-content: center
+            display: flex
+            select
+                height: 40px
+                max-width: 90px
+                background-color: variables.$colorBotonTodos
+                border-top-left-radius: 8px
+                border-bottom-left-radius: 8px
+                justify-content: space-between
+                align-items: center
+                display: flex
+                padding: 0 10px
+                cursor: pointer
+                border-color: Orange
+                border: 1px solid orange
+                
+                option
+                    font-family: sans-serif
+                    color: black
+                    font-weight: bold
+            .buscadorDesk
+                height: 40px
+                width: 100%
+                border: none
+                border-color: Orange
+                border: 1px solid orange
+                border-radius: 0
+            .botonBuscarDesk
+                background-color: #febd69
+                height: 40px
+                border: none
+                border-top-right-radius: 8px
+                border-bottom-right-radius: 8px
+        .parteDerDesk
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: space-evenly
+            margin-right: 10px
+            margin: 0 15px
+            width: 70%
+            &__idioma
+                align-items: center
+                display: flex
+            h4
+                font-family: sans-serif
+                font-size: 9px
+                color: white
+                margin-left: 10px
+            p
+                font-family: sans-serif
+                font-size: 12px
+                color: white
+                margin-left: 10px
+                font-weight: bold
+            select
+                height: 40px
+                width: 60px
+                background-color: variables.$colorBotonTodos
+                border-top-right-radius: 8px
+                border-bottom-right-radius: 8px
+                align-items: center
+                display: flex
+                padding: 0 10px
+                cursor: pointer
+                background-color: variables.$colornavPrincipalDesktop
+                border: none
+                color: white
+                option
+                    font-family: sans-serif
+                    font-weight: bold
+
+    &__segundo
+        height: 40px
+        background-color: variables.$colornavSecundarioDesktop
+        ul
+            width: 75%
+            padding-top: 10px
+            display: flex
+            color: white
+            font-family: sans-serif
+            list-style: none
+            align-items: center
+            justify-content: space-between
+            li:first-child
+                align-items: center
+                display: flex
+                cursor: pointer
+            img
+                cursor: pointer
+    #categorias
+        background-color: white
+        height: 500px
+        width: 300px
+        position: relative

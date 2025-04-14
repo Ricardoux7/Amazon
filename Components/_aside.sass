@@ -1,0 +1,46 @@
+@use "./_variables"
+
+.primerTexto
+    color: black
+    font-family: sans-serif
+    font-size: 20px
+    justify-content: start
+    display: flex
+    padding-top: 5px
+    padding-left: 30px
+.listAside
+    list-style: none
+    font-family: sans-serif
+    font-size: 15px
+    padding: 10px 0 0 10px
+    margin: 20px 0
+    justify-content: start
+    display: flex
+    padding-left: 30px
+
+#aside
+    height: 100%
+    width: 400px
+    background-color: white
+    position: fixed
+    top: 0
+    flex-direction: column
+    z-index: 200
+    transform: translateX(-400px)
+    overflow-x: hidden
+    .Identificacion
+        height: 50px
+        width: 100%
+        background-color: variables.$colorHeaderDelAside
+        align-items: center
+        justify-content: start
+        display: flex
+        padding-left: 30px
+        position: relative
+    p
+        color: white
+        font-size: 20px
+        font-family: sans-serif
+        font-weight: bold
+        padding-left: 20px
+

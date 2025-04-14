@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amazon</title>
     <link rel="stylesheet" href="amazon.css">
 </head>
 <body>
-    
+    <section id="inicio"></section>
     <header class="headerMobile">
         <div class="headerMobile__primero">
             <div class="parteIzq">
@@ -116,9 +116,9 @@
 
         <div class="headerDesktop__segundo">
                 <ul>
-                    <li><input type="checkbox" id="check" >
+                    <li>
                         <label for="check" id="menu">
-                        <img src="Icons/menu2.png" alt="">
+                        <img src="Icons/menu2.png" alt="" class="">
                         </label>
                         <P>Todo</P>
                     </li>
@@ -132,6 +132,7 @@
         </div>
     </header>
 
+    <input type="checkbox" id="check" >
     <aside id="aside">
         <div class="Identificacion">
             <img src="Icons/user2.png" alt="">
@@ -143,6 +144,7 @@
             <li class="listAside">Amazon Music</li>
             <li class="listAside">E-readers Kindle y Libros</li>
             <li class="listAside">Appstore de Amazon</li>
+            <div class="divisor"></div>
         </div>
         <div>
             <h2 class="primerTexto">Buscar por departamento</h2>
@@ -151,6 +153,7 @@
             <li class="listAside">Smart Home</li>
             <li class="listAside">Arte y artesanias</li>
             <li class="listAside">Ver todo</li>
+            <div class="divisor"></div>
         </div>
         <div>
             <h2 class="primerTexto">Programas y funcionalidades</h2>
@@ -159,6 +162,7 @@
             <li class="listAside">amazon Live</li>
             <li class="listAside">Tienda Internacional</li>
             <li class="listAside">Ver todo</li>
+            <div class="divisor"></div>
         </div>
         <div>
             <h2 class="primerTexto">Ayuda y configuracion</h2>
@@ -167,9 +171,13 @@
             <li class="listAside"><img src="Icons/usa2.png" alt="">Estados Unidos</li>
             <li class="listAside">Servicio al cliente</li>
             <li class="listAside">Identificate</li>
+            <div class="divisor"></div>
         </div>
+        <input type="checkbox" id="X">
     </aside>
-
+        <label for="X">
+            <img src="Icons/x-solid.svg" alt="" class="cerrarMenu">
+        </label>
     <main>
         <div class="location">
             <img src="Icons/pin.png" alt="">
@@ -259,53 +267,53 @@
                     <h5>Ver mas</h5>
                 </div>
 
-                    <div class="DesktopSeccion-7">
-                        <h4>Dia de las madres</h4>    
-                        <div class="Prueba">
-                            <img src="Images/diaDeLasMadres.jpg" alt="" class="single-img">
+                <div class="DesktopSeccion-7">
+                    <h4>Dia de las madres</h4>    
+                    <div class="Prueba">
+                        <img src="Images/diaDeLasMadres.jpg" alt="" class="single-img">
+                    </div>
+                    <h5>Ver mas</h5>
+                </div>
+
+                <div class="DesktopSeccion-8">
+                    <h4>Juguetes</h4>
+                    <div class="Prueba">
+                        <img src="Images/juguetes.png" alt="" class="single-img">
                         </div>
                         <h5>Ver mas</h5>
-                    </div>
+                </div>
 
-                    <div class="DesktopSeccion-8">
-                        <h4>Juguetes</h4>
-                        <div class="Prueba">
-                            <img src="Images/juguetes.png" alt="" class="single-img">
-                        </div>
-                        <h5>Ver mas</h5>
+                <div class="DesktopSeccion-9">
+                    <h4>Los más deseados en Videojuegos</h4>
+                    <div class="Prueba">
+                        <li><img src="Images/juego1.jpg" alt="Juego 1"></li>
+                        <li><img src="Images/play.jpg" alt="Play"></li>
+                        <li><img src="Images/juego2.jpg" alt="Juego 3"></li>
+                        <li><img src="Images/juego3.jpg" alt="Juego 4"></li>
+                        <li><img src="Images/juego4.jpg" alt="Juego 5"></li>
+                        <li><img src="Images/juego5.jpg" alt="Juego 6"></li>
+                        <li><img src="Images/juego6.jpg" alt="Juego 7"></li>
+                        <li><img src="Images/juego7.jpg" alt="Juego 8"></li>
+                        <li><img src="Images/juego8.jpg" alt="Juego 9"></li>
+                        <li><img src="Images/juego9.jpg" alt="Juego 10"></li>
+                        <li><img src="Images/juego10.jpg" alt="Juego 11"></li>
                     </div>
+                </div>
 
-                    <div class="DesktopSeccion-9">
-                        <h4>Los más deseados en Videojuegos</h4>
-                        <div class="Prueba">
-                                <li><img src="Images/juego1.jpg" alt="Juego 1"></li>
-                                <li><img src="Images/play.jpg" alt="Play"></li>
-                                <li><img src="Images/juego2.jpg" alt="Juego 3"></li>
-                                <li><img src="Images/juego3.jpg" alt="Juego 4"></li>
-                                <li><img src="Images/juego4.jpg" alt="Juego 5"></li>
-                                <li><img src="Images/juego5.jpg" alt="Juego 6"></li>
-                                <li><img src="Images/juego6.jpg" alt="Juego 7"></li>
-                                <li><img src="Images/juego7.jpg" alt="Juego 8"></li>
-                                <li><img src="Images/juego8.jpg" alt="Juego 9"></li>
-                                <li><img src="Images/juego9.jpg" alt="Juego 10"></li>
-                                <li><img src="Images/juego10.jpg" alt="Juego 11"></li>
-                        </div>
+                <div class="DesktopSeccion-9">
+                    <h4>Los mejores vendedores en Juguetes para ti</h4>
+                    <div class="Prueba">
+                        <li><img src="Images/juguete1.jpg" alt="Juguete 1"></li>
+                        <li><img src="Images/juguete2.jpg" alt="Juguete 2"></li>
+                            <li><img src="Images/juguete3.jpg" alt="Juguete 3"></li>
+                            <li><img src="Images/juguete4.jpg" alt="Juguete 4"></li>
+                            <li><img src="Images/juguete5.jpg" alt="Juguete 5"></li>
+                            <li><img src="Images/juguete6.jpg" alt="Juguete 6"></li>
+                            <li><img src="Images/juguete7.jpg" alt="Juguete 7"></li>
+                            <li><img src="Images/juguete8.jpg" alt="Juguete 8"></li>
+                            <li><img src="Images/juguete9.jpg" alt="Juguete 9"></li>
                     </div>
-
-                    <div class="DesktopSeccion-9">
-                        <h4>Los mejores vendedores en Juguetes para ti</h4>
-                        <div class="Prueba">
-                                <li><img src="Images/juguete1.jpg" alt="Juguete 1"></li>
-                                <li><img src="Images/juguete2.jpg" alt="Juguete 2"></li>
-                                <li><img src="Images/juguete3.jpg" alt="Juguete 3"></li>
-                                <li><img src="Images/juguete4.jpg" alt="Juguete 4"></li>
-                                <li><img src="Images/juguete5.jpg" alt="Juguete 5"></li>
-                                <li><img src="Images/juguete6.jpg" alt="Juguete 6"></li>
-                                <li><img src="Images/juguete7.jpg" alt="Juguete 7"></li>
-                                <li><img src="Images/juguete8.jpg" alt="Juguete 8"></li>
-                                <li><img src="Images/juguete9.jpg" alt="Juguete 9"></li>
-                        </div>
-                    </div>
+                </div>
                 </section>
         </section>
 
@@ -475,6 +483,9 @@
     </main>
 
     <footer class="PieDePaginaDesktop">
+        <div class="Volver">
+            <a href="#inicio">Header</a>
+        </div>
         <div class="PieDePaginaDesktop__categorias">
             <div class="PieDePaginaDesktop__categorias--Conocenos">
                 <h4>Conocenos</h4>

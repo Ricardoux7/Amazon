@@ -1,0 +1,94 @@
+@use "./_variables"
+@use "./_mixins"
+
+footer
+    position: relative
+    bottom: 0
+
+.PieDePaginaDesktop
+    height: auto
+    width: 100%
+    background-color:#232f3e
+    &__categorias
+        justify-content: space-between
+        display: flex
+        &--Conocenos
+            @include mixins.DivFooter()
+        &--Dinero
+            @include mixins.DivFooter()
+        &--Pagos
+            @include mixins.DivFooter()
+        &--Ayuda
+            @include mixins.DivFooter()
+    .segundaParte
+        justify-content: center
+        display: flex
+        flex-direction: row
+        padding-top: 20px
+        padding-bottom: 20px
+        select, button
+            height: 50px
+            width: auto
+            border-color: white
+            border-radius: 8px
+            color: white
+            background-color: variables.$colorHeaderDelAside
+            margin: 0 10px
+            justify-content: center
+            align-items: center
+            padding: 0 10px
+    .terceraParte
+        width: 100%
+        background-color: variables.$ultimaSeccionFooter
+        display: flex
+        padding: 0 20px
+        flex-wrap: wrap
+        gap: 20px
+        div
+            width: 80px
+            height: auto
+            display: flex
+            flex-direction: column
+            justify-content: start
+
+            p
+                padding-top: 10px
+                color: white
+                font-family: sans-serif
+                font-weight: bold
+                font-size: 10px
+                
+
+            h4
+                font-family: sans-serif
+                font-size: 12px
+                color: grey
+        .Copyright 
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: row
+            justify-content: space-evenly
+            align-items: center
+            p
+                color: white
+                font-family: sans-serif
+                font-size: 11px
+                margin-bottom: 30px
+
+.Volver
+    height: 40px
+    width: 100%
+    background-color: variables.$colorlocation
+    display: flex
+    align-items: center
+    justify-content: center
+    color: white
+    font-family: sans-serif
+    font-size: 15px
+    font-weight: bold
+    cursor: pointer
+    a:visited
+        color: white
+        text-decoration: none
+
