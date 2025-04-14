@@ -81,6 +81,7 @@ html, body {
   height: 60px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .headerDesktop__primero .parteIzqDesk {
   width: 50%;
@@ -103,7 +104,7 @@ html, body {
 }
 .headerDesktop__primero .Centro select {
   height: 40px;
-  width: 80px;
+  max-width: 90px;
   background-color: #e6e6e6;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -404,7 +405,7 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 330px;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
@@ -451,7 +452,7 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 330px;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
@@ -498,7 +499,7 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 330px;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
@@ -545,7 +546,7 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 330px;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
@@ -592,7 +593,7 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 330px;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
@@ -639,7 +640,7 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 330px;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
@@ -686,7 +687,7 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 330px;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
@@ -733,7 +734,7 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 330px;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
@@ -840,7 +841,7 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 330px;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
@@ -887,7 +888,7 @@ html, body {
   gap: 4px;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 330px;
   justify-content: space-evenly;
   position: relative;
   overflow: hidden;
@@ -1078,10 +1079,6 @@ html, body {
   width: 100%;
   background-color: #232f3e;
 }
-.PieDePaginaDesktop img {
-  display: block;
-  margin: 0 auto;
-}
 .PieDePaginaDesktop__categorias {
   justify-content: space-between;
   display: flex;
@@ -1154,6 +1151,56 @@ html, body {
   font-weight: bold;
   padding-bottom: 10px;
 }
+.PieDePaginaDesktop .segundaParte {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.PieDePaginaDesktop .segundaParte select, .PieDePaginaDesktop .segundaParte button {
+  height: 50px;
+  width: auto;
+  border-color: white;
+  border-radius: 8px;
+  color: white;
+  background-color: #232f3e;
+  margin: 0 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+.PieDePaginaDesktop .terceraParte {
+  height: auto;
+  width: 100%;
+  background-color: #131a22;
+  display: flex;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.PieDePaginaDesktop .terceraParte div {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.PieDePaginaDesktop .terceraParte p {
+  padding-top: 10px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+}
+.PieDePaginaDesktop .terceraParte h4 {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: grey;
+}
+.PieDePaginaDesktop .divisor {
+  background-color: #3a4553;
+}
 
 @media only screen and (min-width: 850px) {
   .headerMobile {
@@ -1205,6 +1252,7 @@ main {
 
 footer {
   position: relative;
+  bottom: 0;
 }
 
 header {
