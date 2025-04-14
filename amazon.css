@@ -943,6 +943,11 @@ html, body {
   padding-bottom: 10px;
   padding-left: 5px;
 }
+.PrimeraSeccion p {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
 
 .SegundaSeccion h4 {
   font-family: sans-serif;
@@ -968,6 +973,11 @@ html, body {
   justify-content: start;
   padding-bottom: 10px;
   padding-left: 5px;
+}
+.SegundaSeccion p {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .TerceraSeccion h4 {
@@ -995,6 +1005,11 @@ html, body {
   padding-bottom: 10px;
   padding-left: 5px;
 }
+.TerceraSeccion p {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
 
 .CuartaSeccion h4 {
   font-family: sans-serif;
@@ -1020,6 +1035,11 @@ html, body {
   justify-content: start;
   padding-bottom: 10px;
   padding-left: 5px;
+}
+.CuartaSeccion p {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .QuintaSeccion h4 {
@@ -1047,6 +1067,11 @@ html, body {
   padding-bottom: 10px;
   padding-left: 5px;
 }
+.QuintaSeccion p {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
 
 .SextaSeccion h4 {
   font-family: sans-serif;
@@ -1072,6 +1097,11 @@ html, body {
   justify-content: start;
   padding-bottom: 10px;
   padding-left: 5px;
+}
+.SextaSeccion p {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .PieDePaginaDesktop {
@@ -1171,7 +1201,6 @@ html, body {
   padding: 0 10px;
 }
 .PieDePaginaDesktop .terceraParte {
-  height: auto;
   width: 100%;
   background-color: #131a22;
   display: flex;
@@ -1181,22 +1210,36 @@ html, body {
 }
 .PieDePaginaDesktop .terceraParte div {
   width: 80px;
-  height: 40px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
-.PieDePaginaDesktop .terceraParte p {
+.PieDePaginaDesktop .terceraParte div p {
   padding-top: 10px;
   color: white;
   font-family: sans-serif;
   font-weight: bold;
   font-size: 10px;
 }
-.PieDePaginaDesktop .terceraParte h4 {
+.PieDePaginaDesktop .terceraParte div h4 {
   font-family: sans-serif;
   font-size: 12px;
   color: grey;
+}
+.PieDePaginaDesktop .terceraParte .Copyright {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.PieDePaginaDesktop .terceraParte .Copyright p {
+  color: white;
+  font-family: sans-serif;
+  font-size: 11px;
+  margin-bottom: 30px;
 }
 .PieDePaginaDesktop .divisor {
   background-color: #3a4553;
@@ -1235,6 +1278,9 @@ html, body {
   .objetosDesktop {
     display: none;
   }
+  .Copyright p {
+    font-size: 1px;
+  }
 }
 @media only screen and (min-width: 1500px) {
   .primeraImagenDekstop {
@@ -1257,10 +1303,6 @@ footer {
 
 header {
   position: relative;
-}
-
-aside {
-  display: none;
 }
 
 #check:checked ~ #menu {

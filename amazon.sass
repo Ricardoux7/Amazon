@@ -412,6 +412,8 @@ html, body
             @include mixins.seccionesDiv()
     h5
         @include mixins.textoH5()
+    p
+        @include mixins.seccionesP()
 
 
 .SegundaSeccion
@@ -423,6 +425,8 @@ html, body
             @include mixins.seccionesDiv()
     h5
         @include mixins.textoH5()
+    p
+        @include mixins.seccionesP()
 
 .TerceraSeccion
     h4
@@ -433,6 +437,8 @@ html, body
             @include mixins.seccionesDiv()
     h5
         @include mixins.textoH5()
+    p
+        @include mixins.seccionesP()
 
 .CuartaSeccion
     h4
@@ -443,6 +449,8 @@ html, body
             @include mixins.seccionesDiv()
     h5
         @include mixins.textoH5()
+    p
+        @include mixins.seccionesP()
 
 .QuintaSeccion
     h4
@@ -453,6 +461,8 @@ html, body
             @include mixins.seccionesDiv()
     h5
         @include mixins.textoH5()
+    p
+        @include mixins.seccionesP()
 
 .SextaSeccion
     h4
@@ -463,6 +473,8 @@ html, body
             @include mixins.seccionesDiv()
     h5
         @include mixins.textoH5()
+    p
+        @include mixins.seccionesP()
 
 
 .PieDePaginaDesktop
@@ -498,7 +510,6 @@ html, body
             align-items: center
             padding: 0 10px
     .terceraParte
-        height: auto
         width: 100%
         background-color: variables.$ultimaSeccionFooter
         display: flex
@@ -507,23 +518,36 @@ html, body
         gap: 20px
         div
             width: 80px
-            height: 40px
+            height: auto
             display: flex
             flex-direction: column
             justify-content: start
 
-        p
-            padding-top: 10px
-            color: white
-            font-family: sans-serif
-            font-weight: bold
-            font-size: 10px
-            
+            p
+                padding-top: 10px
+                color: white
+                font-family: sans-serif
+                font-weight: bold
+                font-size: 10px
+                
 
-        h4
-            font-family: sans-serif
-            font-size: 12px
-            color: grey
+            h4
+                font-family: sans-serif
+                font-size: 12px
+                color: grey
+        .Copyright 
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: row
+            justify-content: space-evenly
+            align-items: center
+            p
+                color: white
+                font-family: sans-serif
+                font-size: 11px
+                margin-bottom: 30px
+
     .divisor
         background-color: variables.$colorDivisorFooter
 
@@ -552,6 +576,9 @@ html, body
         display: none
     .objetosDesktop
         display: none
+    .Copyright 
+        p
+            font-size: 1px
 @media only screen and (min-width: 1500px)
     .primeraImagenDekstop
         padding: 0px 60px
@@ -568,14 +595,6 @@ footer
     bottom: 0
 header
     position: relative
-
-@if checkbox == true
-    aside
-        display: flex
-@else 
-    aside
-        display: none
-
 
 #check:checked ~ #menu
     transform: translateX(-400px)
