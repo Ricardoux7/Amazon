@@ -177,23 +177,26 @@ header {
   font-weight: bold;
 }
 .headerDesktop__segundo {
-  height: 40px;
+  height: 45px;
   background-color: #232f3e;
 }
 .headerDesktop__segundo ul {
-  width: 75%;
+  width: auto;
   padding-top: 10px;
   display: flex;
   color: white;
   font-family: sans-serif;
   list-style: none;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px;
+  margin-left: 0px;
+  font-weight: bold;
 }
 .headerDesktop__segundo ul li:first-child {
   align-items: center;
-  display: flex;
+  display: block;
   cursor: pointer;
+  margin-left: 1px;
 }
 .headerDesktop__segundo ul img {
   cursor: pointer;
@@ -240,6 +243,12 @@ header {
   width: 100%;
   height: 2px;
   background-color: #e3e6e6;
+}
+
+.divisor2 {
+  width: 100%;
+  height: 2px;
+  background-color: #3a4553;
 }
 
 .location {
@@ -300,6 +309,56 @@ header {
   font-family: sans-serif;
   font-weight: bold;
   padding-left: 20px;
+}
+
+#asideMovil {
+  height: 100%;
+  width: 400px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  flex-direction: column;
+  z-index: 200;
+  transform: translateX(-400px);
+  overflow-x: hidden;
+}
+#asideMovil .Identificacion {
+  height: 80px;
+  width: 100%;
+  background-color: #232f3e;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 0 30px;
+  position: relative;
+  flex-direction: row;
+}
+
+p, h3 {
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 10px 10px;
+  justify-content: start;
+  display: flex;
+}
+
+.home {
+  background-color: white;
+  height: auto;
+  justify-items: space-between;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
 }
 
 .iniciarSesion {
@@ -397,8 +456,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .DesktopSeccion-2 {
@@ -444,8 +504,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .DesktopSeccion-3 {
@@ -491,8 +552,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .DesktopSeccion-4 {
@@ -538,8 +600,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .DesktopSeccion-5 {
@@ -585,8 +648,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .DesktopSeccion-6 {
@@ -632,8 +696,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .DesktopSeccion-7 {
@@ -679,8 +744,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .DesktopSeccion-8 {
@@ -726,8 +792,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .DesktopSeccion-9 {
@@ -833,8 +900,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .DesktopSeccion-12 {
@@ -880,8 +948,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .PrimeraSeccion h4 {
@@ -906,8 +975,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 .PrimeraSeccion p {
   font-family: sans-serif;
@@ -937,8 +1007,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 .SegundaSeccion p {
   font-family: sans-serif;
@@ -968,8 +1039,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 .TerceraSeccion p {
   font-family: sans-serif;
@@ -999,8 +1071,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 .CuartaSeccion p {
   font-family: sans-serif;
@@ -1030,8 +1103,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 .QuintaSeccion p {
   font-family: sans-serif;
@@ -1061,8 +1135,9 @@ header {
   text-decoration: none;
   cursor: pointer;
   justify-content: start;
+  padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 .SextaSeccion p {
   font-family: sans-serif;
@@ -1160,7 +1235,7 @@ footer {
   padding-bottom: 20px;
 }
 .PieDePaginaDesktop .segundaParte select, .PieDePaginaDesktop .segundaParte button {
-  height: 50px;
+  height: 30px;
   width: auto;
   border-color: white;
   border-radius: 8px;
@@ -1170,14 +1245,16 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+  margin-top: 5px;
 }
 .PieDePaginaDesktop .terceraParte {
   width: 100%;
   background-color: #131a22;
   display: flex;
-  padding: 0 20px;
+  padding: 0 30px;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 .PieDePaginaDesktop .terceraParte div {
   width: 80px;
@@ -1203,8 +1280,10 @@ footer {
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
+  gap: 20px;
 }
 .PieDePaginaDesktop .terceraParte .Copyright p {
   color: white;
@@ -1249,16 +1328,19 @@ main {
 
 .primeraImagenMovil {
   width: 100%;
-  height: 400px;
   display: flex;
 }
 
 .primeraImagenDekstop {
   width: 100%;
-  height: 400px;
   display: flex;
   padding: 0;
   background-color: #e3e6e6;
+}
+
+.menu {
+  justify-content: start;
+  position: relative;
 }
 
 .catalogoMovil {
@@ -1297,7 +1379,22 @@ main {
   background-color: #e3e6e6;
 }
 
-#check, #X {
+#check {
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: 500000000;
+  position: fixed;
+}
+
+.fondoNegro {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 199;
   display: none;
 }
 
@@ -1320,6 +1417,11 @@ main {
   .objetosMovil {
     display: none;
   }
+  .menu2 {
+    transform: translateX(360px);
+    position: fixed;
+    margin-top: 10px;
+  }
 }
 @media only screen and (max-width: 850px) {
   .headerDesktop {
@@ -1337,6 +1439,14 @@ main {
   .Copyright p {
     font-size: 1px;
   }
+  #aside {
+    width: 320px;
+  }
+  #check:checked ~ #aside .menu2 {
+    transform: translateX(280px);
+    position: fixed;
+    margin-top: 10px;
+  }
 }
 @media only screen and (min-width: 1500px) {
   .primeraImagenDekstop {
@@ -1348,9 +1458,13 @@ main {
     width: 200px;
   }
 }
-#check:checked ~ #menu {
+#check:checked ~ #menu .menu {
   transform: translateX(-400px);
   transition: transform 0.5s ease-in-out;
+}
+
+#check:checked ~ .fondoNegro {
+  display: block;
 }
 
 #check:checked ~ #aside {
@@ -1358,9 +1472,14 @@ main {
   transition: transform 0.5s ease-in-out;
 }
 
-#X:checked ~ #aside {
-  transform: translateX(-400px);
+#check:checked ~ #asideMovil {
+  transform: translateX(0px);
   transition: transform 0.5s ease-in-out;
+}
+
+.menu2 {
+  width: 20px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=amazon.css.map */

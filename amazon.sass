@@ -24,15 +24,17 @@ main
 
 .primeraImagenMovil
     width: 100% 
-    height: 400px
     display: flex
 
 .primeraImagenDekstop
     width: 100%
-    height: 400px
     display: flex
     padding: 0
     background-color: #e3e6e6
+
+.menu
+    justify-content: start
+    position: relative
 
 .catalogoMovil
     display: flex
@@ -67,7 +69,21 @@ main
     height: auto
     background-color: #e3e6e6
 
-#check, #X
+#check
+    display: none
+    height: 100%
+    width: 100%
+    z-index: 500000000
+    position: fixed
+
+.fondoNegro
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 199
     display: none
 
 @media only screen and (min-width: 850px)
@@ -83,6 +99,13 @@ main
         display: none
     .objetosMovil
         display: none
+
+    #check:checked ~ #aside
+    .menu2
+        transform: translateX(360px)
+        position: fixed
+        margin-top: 10px
+
 @media only screen and (max-width: 850px)
     .headerDesktop
         display: none
@@ -95,6 +118,13 @@ main
     .Copyright 
         p
             font-size: 1px
+    #aside
+        width: 320px
+    #check:checked ~ #aside
+        .menu2
+            transform: translateX(280px)
+            position: fixed
+            margin-top: 10px
 @media only screen and (min-width: 1500px)
     .primeraImagenDekstop
         padding: 0px 60px
@@ -105,13 +135,22 @@ main
             width: 200px
 
 #check:checked ~ #menu
-    transform: translateX(-400px)
-    transition: transform 0.5s ease-in-out
+    .menu
+        transform: translateX(-400px)
+        transition: transform 0.5s ease-in-out
+
+#check:checked ~ .fondoNegro
+    display: block
 
 #check:checked ~ #aside
     transform: translateX(0px)
     transition: transform 0.5s ease-in-out
 
-#X:checked ~ #aside
-    transform: translateX(-400px)
+#check:checked ~ #asideMovil
+    transform: translateX(0px)
     transition: transform 0.5s ease-in-out
+
+
+.menu2
+    width: 20px
+    height: 20px

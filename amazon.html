@@ -11,7 +11,9 @@
     <header class="headerMobile">
         <div class="headerMobile__primero">
             <div class="parteIzq">
-                <img src="Icons/menu.png" alt="" class="Icons">
+                <label for="check">
+                    <img src="Icons/menu.png" alt="" class="Icons">
+                </label>
                 <img src="Icons/logo.png" alt="" class="IconsLogo">
             </div>
             <div class="parteDer">
@@ -118,10 +120,10 @@
                 <ul>
                     <li>
                         <label for="check" id="menu">
-                        <img src="Icons/menu2.png" alt="" class="">
+                        <img src="Icons/menu2.png" alt="" class="menu">
                         </label>
-                        <P>Todo</P>
                     </li>
+                    <li><P>Todo</P></li>
                     <li>Ofertas del Día</li>
                     <li>Prime Video</li>
                     <li>Listas</li>
@@ -131,14 +133,17 @@
                 </ul>
         </div>
     </header>
-
-    <input type="checkbox" id="check" >
+    
+    <input type="checkbox" id="check">
     <aside id="aside">
         <div class="Identificacion">
             <img src="Icons/user2.png" alt="">
             <p>Hola, Identificate</p>
         </div>
-        <div>
+        <label for="check" id="menu2">
+            <img src="Icons/x-solid.svg" alt="" class="menu2">
+        </label>
+        <div> 
             <h2 class="primerTexto">Contenido y dispositivos digitales</h2>
             <li class="listAside">Prime Video</li>
             <li class="listAside">Amazon Music</li>
@@ -173,11 +178,11 @@
             <li class="listAside">Identificate</li>
             <div class="divisor"></div>
         </div>
-        <input type="checkbox" id="X">
     </aside>
-        <label for="X">
-            <img src="Icons/x-solid.svg" alt="" class="cerrarMenu">
-        </label>
+
+    <label for="check" id="xd"></label>
+    <div class="fondoNegro"></div>
+
     <main>
         <div class="location">
             <img src="Icons/pin.png" alt="">
@@ -484,7 +489,7 @@
 
     <footer class="PieDePaginaDesktop">
         <div class="Volver">
-            <a href="#inicio">Header</a>
+            <a href="#inicio" class="enlace">Volver al inicio</a>
         </div>
         <div class="PieDePaginaDesktop__categorias">
             <div class="PieDePaginaDesktop__categorias--Conocenos">
@@ -542,7 +547,7 @@
                 </ul>
             </div>
         </div>
-        <div class="divisor"></div>
+        <div class="divisor2"></div>
         <div class="segundaParte">
         <img src="Icons/logo.png" alt="">
         <Select name="Idioma" class="idioma">
@@ -643,4 +648,4 @@
     </footer>
 
 </body>
-</html>
+</html></div>

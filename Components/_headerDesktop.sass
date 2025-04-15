@@ -6,7 +6,6 @@ header
 
 .headerDesktop
     position: relative
-
     &__primero
         background-color: variables.$colornavPrincipalDesktop
         width: 100%
@@ -102,21 +101,25 @@ header
                     font-weight: bold
 
     &__segundo
-        height: 40px
+        height: 45px
         background-color: variables.$colornavSecundarioDesktop
         ul
-            width: 75%
+            width: auto
             padding-top: 10px
             display: flex
             color: white
             font-family: sans-serif
             list-style: none
             align-items: center
-            justify-content: space-between
+            gap: 20px
+            margin-left: 0px
+            font-weight: bold
+
             li:first-child
                 align-items: center
-                display: flex
+                display: block
                 cursor: pointer
+                margin-left: 1px
             img
                 cursor: pointer
     #categorias
